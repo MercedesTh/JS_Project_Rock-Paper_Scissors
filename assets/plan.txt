@@ -1,0 +1,64 @@
+VORGABERN!
+Wieviel Runden gegen den Spieler?
+Farbe ändert sich, je nachedem, ob Gewinn, Unentschieden, Niederlage
+
+
+
+WAS SEHE ICH?
+section > mit p: 'how many rounds?'
+section > form > 4 Radiobuttons für die Rundenanzahl: a. 5 (x)
+                                                      b. 10 (x)
+                                                      c. 15 (x)
+                                                      d. 20 (x)
+form wird zu div output -> Rundenzähler: x--/x
+div output -> Punktezähler: x++ : x++
+div output zeigt 3 Optionen: 1. 'Let's play'
+                             2. 'x(y) beats x(y). You win/lose!'
+                             3. 'The user wins / loses'
+3 img mit click für 3 Optionen: m. 'Stone'
+                                n. 'Paper'
+                                o. 'Scissors'
+p ohne Funktion : 'MAKE YOUR MOVE'
+a für reload: 'restart'
+
+
+
+input1 = inRounds <- x
+output1 = outRounds -> 1++ / x
+btn1 = stone -> EventListener 
+btn2 = paper -> EventListener
+btn3 = scissor -> EventListener
+output2 = outPoints -> y / z == x
+output3 = outBeats 
+user -> 'click' EventListener
+comp -> Math.random()
+
+
+
+PSEUDOCODE
+- Wenn in einer Funktion die Rundenanzahl x UND ein Zeichen geclickt wurden, starten 1 Punktezähler UND 2 Rundenzähler
+- Der Rundenzähler zählt im Output1 1++/x hoch, bis die Rundenanzahl == x ist (x/x)
+- Die 2 Punktezähler zählen in Output2 0++/0++ hoch, bis die Gesamtpunktzahl (y/z) == x ist
+- Wenn in der Funktion ein Zeichen geklickt wird, wird Math.random() ausglöst und dessen Wert mit dem Wert verglichen, 
+  der mit dem Click übermittelt wird.
+- Je nachdem ob Math.random() (= Computer) oder der Click (= User) gewinnt, wird der entsprechende Text in Output3 angezeigt.
+- Output3:
+  -> Es gibt einen Ausgangstext: 'Let's play'
+  -> Es gibt 9 Textoptionen für jede Runde: - 'Stone(user) beats Scissor(comp). You win!'
+                                            - 'Paper(user) beats Stone(comp) You win!'   
+                                            - 'Scissor(user) beats Paper(comp). You win!'
+                                            - 'Stone(comp) beats Scissor(user). You lose!'
+                                            - 'Paper(comp) beats Stone(user) You lose!'
+                                            - 'Scissor(comp) beats Paper(user). You lose!'
+                                            - 'It was a draw! You both chose Stone'
+                                            - 'It was a draw! You both chose Paper'
+                                            - 'It was a draw! You both chose Scissors'
+  -> Ist das Max an Runden/Punkten erreicht, ist das Spiel zu Ende: - 'The user wins'
+                                                                    - 'The user loses'
+ 
+
+
+>>> Wie packe ich Radiobuttons in eine if-Abfrage?
+>>> div#outRounds per .createElement!!!
+
+

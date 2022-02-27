@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Project_Rock-Paper_Scissors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Stone, Paper, Scissor</h1>
+        <section id="rounds">
+            <h3>HOW MANY ROUNDS?</h3>
+            <form id="inRounds" action="" onsubmit="return false">
+                <article>
+                    <input type="radio" name="rounds" id="5Rounds">
+                    <label for="5Rounds">5</label>
+                </article>
+                <article>
+                    <input type="radio" name="rounds" id="10Rounds">
+                    <label for="10Rounds">10</label>
+                </article>
+                <article>
+                    <input type="radio" name="rounds" id="15Rounds">
+                    <label for="15Rounds">15</label>
+                </article>
+                <article>
+                    <input type="radio" name="rounds" id="20Rounds">
+                    <label for="20Rounds">20</label>
+                </article>
+            </form>
+        </section>
+
+        <section id="points">
+            <p>user</p>
+            <h4 id="outPoints">0:0</h4>
+            <p>comp</p>
+        </section>
+
+        <section id="play">
+            <article id="beats">
+                <h2 id="outBeats">Let's play!</h2>
+            </article>
+            <article id="icons">
+                <a id="stone" href="#">✊🏾</a>
+                <a d="paper" href="#">✋🏾</a>
+                <a d="scissors" href="#">✌🏾</a>
+            </article>
+            <h3>MAKE YOUR MOVE...</h3>
+        </section>
+
+        <a id="reload" href="#">...AGAIN</a>
+
+    </main>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a95508fa23.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

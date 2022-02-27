@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background: #030303;
+    color: slateblue;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a{
+    font-family: sans-serif;  
+    text-decoration: none;
+    margin: 5%;
+    font-size: 1rem;
+    border: 3px solid coral;
+    border-radius: 20px;
+    padding: 0.5% 1%;
+}
+
+a, label, p{
+    color: coral;
+}
+
+h3, label{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+#play a{
+    font-size: 4rem;
+}
+
+h1, h2{
+    font-size: 3rem;
+}
+
+h3{
+    margin-bottom: 2%;
+}
+
+h2{
+    margin-bottom: 5%;
+}
+
+h4{
+    font-size: 4rem;
+}
+
+#play h2, p, a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#play h2, #icons{
+margin-bottom: 8%;
+}
+
+main{
+    margin-top: 2%;
+}
+
+section{
+    width: 30%;
+    margin: 1% 35%;
+}
+
+#rounds, #points, #icons a{
+    border: 3px solid slateblue;
+    border-radius: 20px;
+    padding: 1% 2%;
+}
+
+#points{
+    padding: 0.5% 2%;
+    margin-bottom: 3%;
+}
+
+#rounds{
+    width: 30%;
+    margin: 3% 35%;
+}
+
+form, #points, #icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icons{
+    width: 90%;
+    margin: 0 5%;
+}
